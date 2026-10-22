@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/halto-app/en/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}</style>
+<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">The shield</span>
         <h2>A pause,<br>not a cage</h2>
@@ -77,7 +80,7 @@
 <ul><li>Block apps, categories and websites</li><li>Preview the shield before you rely on it</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/shield-en.webp" alt="The “Not right now” shield" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/pause-en.webp" alt="The pause screen, asking what you need the app for" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">The pause</span>
@@ -85,7 +88,7 @@
         <p class="body">Tap “I need it” on the shield and a notification brings you to Halto&#39;s pause. Breathe for 15 seconds, say what you need it for, then open it for 5 minutes. Changed your mind? Tap “Never mind”.</p>
 <ul><li>15 seconds, 5 minutes and three unlocks a day are defaults you can change</li><li>The shield comes back when the unlock ends</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">Schedules</span>
         <h2>Your hours,<br>your rules</h2>
@@ -93,7 +96,7 @@
 <ul><li>Schedule, daily limit (Pro) or focus</li><li>Strict mode makes unlocking harder (Pro)</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/schedule-en.webp" alt="Editing a profile&#39;s schedule" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/insights-en.webp" alt="Insights: times you walked away versus unlocked" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">Insights</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">How it works</span>
-    <h2>Three steps to start</h2>
+    <div class="reveal"><span class="kicker">How it works</span>
+    <h2>Three steps to start</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>Allow blocking</h3><p>iOS asks for your permission before Halto can block apps. Apple gives Halto anonymous handles, never app names.</p></div><div class="step"><div class="n">2</div><h3>Pick apps and hours</h3><p>Choose the apps, categories and websites to block, and when. That&#39;s a profile.</p></div><div class="step"><div class="n">3</div><h3>Close and walk away</h3><p>Every time you close an app at the shield, it counts in Insights.</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>Allow blocking</h3><p>iOS asks for your permission before Halto can block apps. Apple gives Halto anonymous handles, never app names.</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>Pick apps and hours</h3><p>Choose the apps, categories and websites to block, and when. That&#39;s a profile.</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>Close and walk away</h3><p>Every time you close an app at the shield, it counts in Insights.</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>Nothing leaves<br>your iPhone</h2>
       <p class="lead">Halto has no account, no server, no analytics and no third-party SDKs. Your schedules, your reasons and your history live on this iPhone only.</p>
       <div class="pgrid">
-<div class="pcard"><b>Anonymous handles only</b><p>Apple gives Halto anonymous handles for the apps you pick, never their names. Even we can&#39;t see which apps you chose.</p></div><div class="pcard"><b>Usage stays with Apple</b><p>Your usage charts are drawn by Apple inside a private sandbox. The app never receives those numbers.</p></div><div class="pcard"><b>No data collected</b><p>App Store privacy label: Data Not Collected.</p></div><div class="pcard"><b>Delete it all, anytime</b><p>Settings › Reset all data, or deleting the app, removes everything.</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>Anonymous handles only</b><p>Apple gives Halto anonymous handles for the apps you pick, never their names. Even we can&#39;t see which apps you chose.</p></div><div class="pcard reveal" style="--d:1"><b>Usage stays with Apple</b><p>Your usage charts are drawn by Apple inside a private sandbox. The app never receives those numbers.</p></div><div class="pcard reveal" style="--d:2"><b>No data collected</b><p>App Store privacy label: Data Not Collected.</p></div><div class="pcard reveal" style="--d:3"><b>Delete it all, anytime</b><p>Settings › Reset all data, or deleting the app, removes everything.</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="../assets/img/privacy-en.webp" alt="Settings screen explaining where your data lives" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">Pricing</span>
-    <h2>Start free,<br>go Pro when you need it</h2>
+    <div class="reveal"><span class="kicker">Pricing</span>
+    <h2>Start free,<br>go Pro when you need it</h2></div>
 <p class="lead">One profile and three focus sessions a day are free, with no time limit. Pick Pro when you want more.</p>    <div class="plans">
-      <div class="plan">
+      <div class="plan reveal" style="--d:0">
         <h3>Free</h3>
         <div class="price">$0</div>
         <div class="per">No time limit</div>
         <ul><li>One profile (schedule or focus)</li><li>Three focus sessions a day</li><li>Today&#39;s report and the weekly summary</li><li>The Live Activity and the widget</li></ul>
       </div>
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:1">
 <span class="tag">Recommended</span>        <h3>Halto Pro Yearly</h3>
         <div class="price">$34.99<span class="per"> / year</span></div>
         <div class="per">Eligible new subscribers get 2 weeks free, then $34.99 a year · optional reminder 24 hours before the trial ends</div>
         <ul><li>Unlimited profiles, daily limits and strict mode</li><li>Insights history beyond today</li><li>Cancel anytime</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Halto Pro Lifetime</h3>
         <div class="price">$69.99</div>
         <div class="per">Pay once · no subscription</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">FAQ</span><h2>Good questions</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">FAQ</span><h2>Good questions</h2></div>
+    <div class="faq reveal">
 <details><summary>Can&#39;t I just turn it off?</summary><p>Yes, you can. iOS always lets you turn off Halto&#39;s blocking permission in Settings or delete the app, and Halto doesn&#39;t hide that. What it adds is strict mode (Pro): ordinary unlocks are switched off and one emergency unlock a day is left. While strict mode is blocking, that profile can&#39;t be edited, switched off or deleted, and once the emergency unlock is used, the block stands until the schedule ends.</p></details>
 <details><summary>How do I open an app when I really need it?</summary><p>Tap “I need it” on the shield and Halto sends a notification. Tap it to open the pause: breathe for 15 seconds, pick a reason, and the app opens for 5 minutes. You get three unlocks a day by default; the pause, the unlock length and the daily count can be changed in Settings › Unlock defaults.</p></details>
 <details><summary>Can Halto see which apps I use?</summary><p>No. Apple gives Halto anonymous handles for the apps you pick, never their names, and your usage numbers are drawn only inside Apple&#39;s private sandbox. Halto has no account and no server, so nothing is sent anywhere.</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="../assets/img/icon.webp" alt="Halto" width="96" height="96" loading="lazy">
     <h2>Take back your time</h2>
     <p class="lead">Coming soon to the App Store.</p>

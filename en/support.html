@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/halto-app/en/support.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}</style>
+<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -52,7 +55,7 @@
       <b>Contact</b>
       <p>Our support address will be posted on this page soon. Until then, the questions below cover the common cases.</p>
     </div>
-    <h2 class="faq-title" style="font-size:24px;margin-top:44px">Frequently asked questions</h2>
+    <h2 class="faq-title">Frequently asked questions</h2>
     <div class="faq">
 <details><summary>Can&#39;t I just turn it off?</summary><p>Yes, you can. iOS always lets you turn off Halto&#39;s blocking permission in Settings or delete the app. Halto is a self-control tool, not a security product, so it doesn&#39;t try to stop that or hide it. What it adds is strict mode (Pro): ordinary unlocks are switched off and one emergency unlock a day is left. While strict mode is blocking, that profile can&#39;t be edited, switched off or deleted, and Reset all data waits until the block ends. Once the emergency unlock is used, the block stands until the schedule ends.</p></details>
 <details><summary>How do I open an app when I really need it?</summary><p>Tap “I need it” on the shield and Halto sends a notification. Tap it to open the pause: breathe for 15 seconds, pick a reason, and the app opens for 5 minutes. You get three unlocks a day by default; the pause, the unlock length and the daily count can be changed in Settings › Unlock defaults.</p></details>

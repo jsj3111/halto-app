@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/halto-app/ja/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard-jp/PretendardJPVariable.site.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard-jp/pretendard-jp.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}</style>
+<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">ブロック画面</span>
         <h2>止めても、<br>閉じ込めない</h2>
@@ -77,7 +80,7 @@
 <ul><li>アプリ・カテゴリ・サイトを選んでブロック</li><li>ブロック画面は、事前にプレビューできます</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/shield-ja.webp" alt="「今はやめておこう」のブロック画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/pause-ja.webp" alt="開く理由を選ぶ一時停止画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">ひと呼吸</span>
@@ -85,7 +88,7 @@
         <p class="body">ブロック画面で「どうしても必要」を押すと、通知が届きます。通知を開くと、Haltoの一時停止画面に移ります。15秒深呼吸して、何のために必要かを選び、5分だけ開けます。気が変わったら、「やめておく」を押すだけです。</p>
 <ul><li>15秒・5分・1日3回は既定値で、設定で変えられます</li><li>解除時間が終わると、またブロック</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">スケジュール</span>
         <h2>自分の時間割で</h2>
@@ -93,7 +96,7 @@
 <ul><li>スケジュール・1日の上限(Pro)・集中から選択</li><li>ストリクトモードで、解除をもっと難しく(Pro)</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/schedule-ja.webp" alt="プロフィールのスケジュール設定画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/insights-ja.webp" alt="そのまま閉じた回数と解除した回数を表示するインサイト画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">インサイト</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">使い方</span>
-    <h2>3ステップで<br>始められます</h2>
+    <div class="reveal"><span class="kicker">使い方</span>
+    <h2>3ステップで<br>始められます</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>ブロックの権限を許可</h3><p>アプリを止めるには、iOSの権限が必要です。Appleが渡すのは、アプリ名ではなく匿名の識別子だけです。</p></div><div class="step"><div class="n">2</div><h3>アプリと時間を選ぶ</h3><p>止めるアプリ・カテゴリ・サイトと時間を選んで、プロフィールを作ります。</p></div><div class="step"><div class="n">3</div><h3>閉じて、離れる</h3><p>ブロック画面でアプリを閉じるたびに、インサイトに記録されます。</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>ブロックの権限を許可</h3><p>アプリを止めるには、iOSの権限が必要です。Appleが渡すのは、アプリ名ではなく匿名の識別子だけです。</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>アプリと時間を選ぶ</h3><p>止めるアプリ・カテゴリ・サイトと時間を選んで、プロフィールを作ります。</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>閉じて、離れる</h3><p>ブロック画面でアプリを閉じるたびに、インサイトに記録されます。</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>何もiPhoneの外に<br>出ません</h2>
       <p class="lead">Haltoにはアカウントもサーバーも解析も外部SDKもありません。スケジュールも理由も履歴も、このiPhoneの中だけにあります。</p>
       <div class="pgrid">
-<div class="pcard"><b>匿名の識別子だけ</b><p>Appleが渡すのは、選んだアプリの名前ではなく匿名の識別子だけ。どのアプリを選んだかは私たちにも見えません。</p></div><div class="pcard"><b>使用時間はAppleの領域の中</b><p>使用時間のグラフは、Appleが隔離された領域の中で描きます。アプリがその数値を受け取ることはありません。</p></div><div class="pcard"><b>収集するデータなし</b><p>App Storeのプライバシーラベル:データの収集なし。</p></div><div class="pcard"><b>いつでもすべて消去</b><p>アプリを削除するか、設定 ›「すべてのデータを消去」で、すべて消えます。</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>匿名の識別子だけ</b><p>Appleが渡すのは、選んだアプリの名前ではなく匿名の識別子だけ。どのアプリを選んだかは私たちにも見えません。</p></div><div class="pcard reveal" style="--d:1"><b>使用時間はAppleの領域の中</b><p>使用時間のグラフは、Appleが隔離された領域の中で描きます。アプリがその数値を受け取ることはありません。</p></div><div class="pcard reveal" style="--d:2"><b>収集するデータなし</b><p>App Storeのプライバシーラベル:データの収集なし。</p></div><div class="pcard reveal" style="--d:3"><b>いつでもすべて消去</b><p>アプリを削除するか、設定 ›「すべてのデータを消去」で、すべて消えます。</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="../assets/img/privacy-ja.webp" alt="記録の保存場所を説明するプライバシー画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">料金</span>
-    <h2>無料で始めて、<br>必要なときだけPro</h2>
+    <div class="reveal"><span class="kicker">料金</span>
+    <h2>無料で始めて、<br>必要なときだけPro</h2></div>
 <p class="lead">プロフィール1つと1日3回の集中セッションは、期間の制限なく無料で使えます。もっと必要になったらProを選べます。</p>    <div class="plans">
-      <div class="plan">
+      <div class="plan reveal" style="--d:0">
         <h3>無料</h3>
         <div class="price">¥0</div>
         <div class="per">期間の制限なし</div>
         <ul><li>プロフィール1つ(スケジュールまたは集中)</li><li>1日3回の集中セッション</li><li>今日のレポートと週次まとめ</li><li>ライブアクティビティとウィジェット</li></ul>
       </div>
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:1">
 <span class="tag">おすすめ</span>        <h3>Halto Pro 年間</h3>
         <div class="price">¥5,000<span class="per"> / 年</span></div>
         <div class="per">対象の方は2週間の無料トライアル後、年額¥5,000 · 終了24時間前のお知らせを選べます</div>
         <ul><li>プロフィール無制限・1日の上限・ストリクトモード</li><li>今日より前のインサイト履歴</li><li>いつでも解約</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Halto Pro 買い切り</h3>
         <div class="price">¥10,000</div>
         <div class="per">1回払い · サブスクなし</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">よくある質問</span><h2>気になること</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">よくある質問</span><h2>気になること</h2></div>
+    <div class="faq reveal">
 <details><summary>本当にオフにできないの?</summary><p>オフにはできます。iOSでは、いつでも設定からHaltoのブロック権限をオフにしたり、アプリを削除したりできます。Haltoは、それを隠しません。そのうえで、ストリクトモード(Pro)をオンにすると、通常の解除が止まり、1日1回の緊急解除だけが残ります。作動中は、そのプロフィールを編集・オフ・削除できません。緊急解除を使ったあとは、スケジュールが終わるまでブロックが続きます。</p></details>
 <details><summary>どうしても必要なときは、どう開くの?</summary><p>ブロック画面で「どうしても必要」を押すと、通知が届きます。通知をタップすると、Haltoの一時停止画面が開きます。15秒深呼吸して理由を選ぶと、5分間開けます。解除は既定で1日3回まで。一時停止の長さ・解除時間・回数は設定 › 解除の既定値で変えられます。</p></details>
 <details><summary>どのアプリを使っているか、Haltoに分かりますか?</summary><p>いいえ。Appleが渡すのは、選んだアプリの名前ではなく匿名の識別子だけです。使用時間の数値が描かれるのは、Appleの隔離された領域の中だけです。Haltoには、アカウントもサーバーもないので、記録を外に送ることはありません。</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="../assets/img/icon.webp" alt="Halto" width="96" height="96" loading="lazy">
     <h2>時間を取り戻そう</h2>
     <p class="lead">まもなくApp Storeで公開します。</p>

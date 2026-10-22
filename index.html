@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/halto-app/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#5B4FE0">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}</style>
+<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">차단 화면</span>
         <h2>막아 두되,<br>가두지 않아요</h2>
@@ -77,7 +80,7 @@
 <ul><li>앱·카테고리·사이트를 골라 차단</li><li>차단 화면은 미리 보기로 확인 가능</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="assets/img/shield-ko.webp" alt="&#39;지금은 아니에요&#39; 차단 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="assets/img/pause-ko.webp" alt="열려는 이유를 고르는 멈춤 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">잠깐 멈춤</span>
@@ -85,7 +88,7 @@
         <p class="body">차단 화면에서 &#39;꼭 필요해요&#39;를 누르면 알림을 통해 Halto의 멈춤 화면이 열려요. 15초 동안 숨을 고르고 무엇 때문에 필요한지 고른 뒤 5분만 열어요. 마음이 바뀌면 &#39;그만둘게요&#39;를 누르면 돼요.</p>
 <ul><li>15초·5분·하루 3번은 기본값, 설정에서 바꿀 수 있어요</li><li>해제 시간이 끝나면 다시 차단</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">일정</span>
         <h2>내 시간표대로</h2>
@@ -93,7 +96,7 @@
 <ul><li>일정·하루 한도(Pro)·집중 중에서 선택</li><li>엄격 모드로 해제를 더 어렵게(Pro)</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="assets/img/schedule-ko.webp" alt="프로필 일정 설정 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="assets/img/insights-ko.webp" alt="그냥 닫은 횟수와 해제 횟수를 보여 주는 인사이트 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">인사이트</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">사용 방법</span>
-    <h2>세 단계면 시작해요</h2>
+    <div class="reveal"><span class="kicker">사용 방법</span>
+    <h2>세 단계면 시작해요</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>차단 권한 허용</h3><p>앱을 막으려면 iOS의 권한이 필요해요. 애플은 앱 이름 대신 익명 식별값만 전달해요.</p></div><div class="step"><div class="n">2</div><h3>앱과 시간 고르기</h3><p>막을 앱·카테고리·사이트와 시간을 골라 프로필을 만들어요.</p></div><div class="step"><div class="n">3</div><h3>닫고, 넘어가기</h3><p>차단 화면에서 앱을 닫을 때마다 인사이트에 기록돼요.</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>차단 권한 허용</h3><p>앱을 막으려면 iOS의 권한이 필요해요. 애플은 앱 이름 대신 익명 식별값만 전달해요.</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>앱과 시간 고르기</h3><p>막을 앱·카테고리·사이트와 시간을 골라 프로필을 만들어요.</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>닫고, 넘어가기</h3><p>차단 화면에서 앱을 닫을 때마다 인사이트에 기록돼요.</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>아무것도 폰 밖으로<br>나가지 않아요</h2>
       <p class="lead">Halto에는 계정도, 서버도, 분석 도구도, 외부 SDK도 없어요. 일정과 이유, 기록은 모두 이 iPhone 안에만 있어요.</p>
       <div class="pgrid">
-<div class="pcard"><b>익명 식별값만</b><p>애플은 고른 앱의 이름 대신 익명 식별값만 전달해요. 어떤 앱을 골랐는지 저희도 볼 수 없어요.</p></div><div class="pcard"><b>사용 시간은 애플 영역 안에</b><p>사용 시간 그래프는 애플이 보호된 영역 안에서 직접 그려요. 앱은 그 숫자를 받지 않아요.</p></div><div class="pcard"><b>수집하는 데이터 없음</b><p>App Store 개인정보 라벨: 데이터 수집 안 함.</p></div><div class="pcard"><b>언제든 모두 삭제</b><p>설정 › 모든 데이터 초기화, 또는 앱을 지우면 모두 사라져요.</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>익명 식별값만</b><p>애플은 고른 앱의 이름 대신 익명 식별값만 전달해요. 어떤 앱을 골랐는지 저희도 볼 수 없어요.</p></div><div class="pcard reveal" style="--d:1"><b>사용 시간은 애플 영역 안에</b><p>사용 시간 그래프는 애플이 보호된 영역 안에서 직접 그려요. 앱은 그 숫자를 받지 않아요.</p></div><div class="pcard reveal" style="--d:2"><b>수집하는 데이터 없음</b><p>App Store 개인정보 라벨: 데이터 수집 안 함.</p></div><div class="pcard reveal" style="--d:3"><b>언제든 모두 삭제</b><p>설정 › 모든 데이터 초기화, 또는 앱을 지우면 모두 사라져요.</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="assets/img/privacy-ko.webp" alt="기록이 저장되는 곳을 안내하는 개인정보 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">요금</span>
-    <h2>무료로 시작하고,<br>필요할 때만 Pro</h2>
+    <div class="reveal"><span class="kicker">요금</span>
+    <h2>무료로 시작하고,<br>필요할 때만 Pro</h2></div>
 <p class="lead">프로필 하나와 하루 집중 세션 3번은 기간 제한 없이 무료예요. 더 필요할 때 Pro를 고르세요.</p>    <div class="plans">
-      <div class="plan">
+      <div class="plan reveal" style="--d:0">
         <h3>무료</h3>
         <div class="price">₩0</div>
         <div class="per">기간 제한 없음</div>
         <ul><li>프로필 1개 (일정 또는 집중)</li><li>하루 집중 세션 3번</li><li>오늘의 리포트와 주간 요약</li><li>실시간 활동과 위젯</li></ul>
       </div>
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:1">
 <span class="tag">추천</span>        <h3>Halto Pro 연간</h3>
         <div class="price">₩39,000<span class="per"> / 년</span></div>
         <div class="per">체험 대상자는 2주 무료 체험 후 연 ₩39,000 · 체험 종료 24시간 전 알림 선택 가능</div>
         <ul><li>프로필 무제한·하루 한도·엄격 모드</li><li>오늘 이전의 인사이트 기록</li><li>언제든 해지</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Halto Pro 평생</h3>
         <div class="price">₩79,000</div>
         <div class="per">한 번 결제 · 구독 아님</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">자주 묻는 질문</span><h2>궁금한 점</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">자주 묻는 질문</span><h2>궁금한 점</h2></div>
+    <div class="faq reveal">
 <details><summary>정말 못 끄나요?</summary><p>끌 수 있어요. iOS에서는 언제든 설정에서 Halto의 차단 권한을 끄거나 앱을 지울 수 있고, Halto는 이 사실을 숨기지 않아요. 대신 엄격 모드(Pro)를 켜면 일반 해제가 꺼지고 하루 한 번 비상 해제만 남아요. 엄격 모드가 차단 중일 때는 그 프로필을 수정하거나 끄거나 삭제할 수 없고, 비상 해제를 쓰고 나면 일정이 끝날 때까지 차단이 유지돼요.</p></details>
 <details><summary>꼭 필요할 땐 어떻게 여나요?</summary><p>차단 화면에서 &#39;꼭 필요해요&#39;를 누르면 알림이 와요. 알림을 누르면 Halto의 멈춤 화면이 열리고, 15초 동안 숨을 고른 뒤 이유를 고르면 5분 동안 열 수 있어요. 해제는 기본 하루 3번이고, 멈춤 시간·해제 시간·횟수는 설정 › 해제 기본값에서 바꿀 수 있어요.</p></details>
 <details><summary>제가 어떤 앱을 쓰는지 Halto가 알 수 있나요?</summary><p>아니요. 애플은 고른 앱의 이름 대신 익명 식별값만 전달하고, 사용 시간 수치는 애플의 보호된 영역 안에서만 그려져요. Halto에는 계정도 서버도 없어서 어떤 기록도 밖으로 보내지 않아요.</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="assets/img/icon.webp" alt="Halto" width="96" height="96" loading="lazy">
     <h2>내 시간을 되찾으세요</h2>
     <p class="lead">곧 App Store에서 만나요.</p>
