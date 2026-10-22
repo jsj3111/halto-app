@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jsj3111.github.io/halto-app/sitemap.xml

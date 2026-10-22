@@ -1,38 +1,189 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Halto</title>
-<style>
-  :root { color-scheme: light dark; }
-  body { margin: 0 auto; padding: 3rem 1.25rem 4rem; max-width: 42rem; line-height: 1.6;
-         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-  .tagline { font-size: 1.1rem; color: #5a5e78; margin-top: 0; }
-  ul { padding-left: 1.1rem; }
-  a { color: #4a3bc8; }
-  @media (prefers-color-scheme: dark) { .tagline { color: #a6a9bf; } a { color: #9c90ff; } }
-  footer { margin-top: 3rem; font-size: 0.9rem; color: #6b6f88; }
-</style>
+<title>Halto — 손이 먼저 가는 앱, 시간 정해 막기</title>
+<meta name="description" content="SNS·숏폼처럼 손이 먼저 가는 앱을 정한 시간에 막는 iPhone 앱. 열기 전에 한 번 멈추고, 기록은 iPhone에만 남아요. 계정·서버·분석 도구 없음.">
+<link rel="canonical" href="https://jsj3111.github.io/halto-app/">
+<link rel="alternate" hreflang="ko" href="https://jsj3111.github.io/halto-app/">
+<link rel="alternate" hreflang="ja" href="https://jsj3111.github.io/halto-app/ja/">
+<link rel="alternate" hreflang="en" href="https://jsj3111.github.io/halto-app/en/">
+<link rel="alternate" hreflang="x-default" href="https://jsj3111.github.io/halto-app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Halto">
+<meta property="og:title" content="Halto — 손이 먼저 가는 앱, 시간 정해 막기">
+<meta property="og:description" content="SNS·숏폼처럼 손이 먼저 가는 앱을 정한 시간에 막는 iPhone 앱. 열기 전에 한 번 멈추고, 기록은 iPhone에만 남아요. 계정·서버·분석 도구 없음.">
+<meta property="og:image" content="https://jsj3111.github.io/halto-app/assets/img/og-ko.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jsj3111.github.io/halto-app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#5B4FE0">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
+<link rel="stylesheet" href="assets/site.css">
+<style>:root{--grad:linear-gradient(135deg,#5B4FE0 0%,#14B8A6 100%);--accent:#5B4FE0;--accent-soft:rgba(91,79,224,.1);--accent-dark:#99F6E4;--check:#5B4FE0;--glow-a:rgba(91,79,224,.16);--glow-b:rgba(20,184,166,.14);--icon-shadow:rgba(91,79,224,.45);--dark:#17123D}</style>
 </head>
 <body>
-<h1>Halto</h1>
-<p class="tagline">An honest, on-device app blocker for iPhone.</p>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/icon.webp" alt="" width="30" height="30">Halto</a>
+    <nav class="nav-links" aria-label="Halto">
+      <a class="hide-m" href="#features">기능</a>
+      <a class="hide-m" href="#privacy">개인정보</a>
+      <a class="hide-m" href="#pricing">요금</a>
+      <a class="hide-m" href="support.html">지원</a>
+      <span class="lang"><a class="on" aria-current="page" href="" hreflang="ko" lang="ko">한국어</a><a href="ja/" hreflang="ja" lang="ja">日本語</a><a href="en/" hreflang="en" lang="en">EN</a></span>
+    </nav>
+  </div>
+</header>
 
-<p>Block the apps that steal your time. No hidden charges. Cancel anytime.
-Nothing leaves your iPhone.</p>
+<main id="main">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">● iPhone 앱 차단 · 집중 타이머</span>
+      <h1>손이 먼저 가는 앱,<br><span class="g">시간 정해</span> 막기</h1>
+      <p class="lead">SNS와 숏폼처럼 하루를 잡아먹는 앱을 정한 시간에, 하루 한도가 차면, 또는 지금 바로 막아요. 꼭 필요할 땐 잠깐 멈춘 뒤 몇 분만 열 수 있어요.</p>
+      <div class="cta">
+<span class="store soon" role="note"><span><small>곧 출시</small>App Store</span></span>
+<span class="sub">프로필 하나와 하루 집중 세션 3번은 무료예요</span>      </div>
+      <div class="trust">
+<span><i aria-hidden="true">✓</i>계정·서버 없음</span><span><i aria-hidden="true">✓</i>기록은 iPhone에만</span><span><i aria-hidden="true">✓</i>숨은 요금 없음</span><span><i aria-hidden="true">✓</i>언제든 해지</span>      </div>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone a"><img src="assets/img/home-ko.webp" alt="" width="600" height="1304"></div>
+      <div class="phone b"><img src="assets/img/shield-ko.webp" alt="" width="600" height="1304"></div>
+    </div>
+  </div>
+</div>
 
-<ul>
-  <li><a href="privacy.html">Privacy Policy</a> — we collect nothing</li>
-  <li><a href="terms.html">Terms of Use</a></li>
-</ul>
+<div class="band">
+  <div class="wrap">
+<div><b>일정</b><p>업무 시간·잠들기 전·평일만</p></div><div><b>하루 한도</b><p>정한 시간을 쓰면 차단</p></div><div><b>집중 세션</b><p>지금부터 잠시 막아 두기</p></div><div><b>앱·카테고리·사이트</b><p>골라서 함께 차단</p></div>  </div>
+</div>
 
-<p>Halto uses Apple's Screen Time APIs to shield the apps you choose, on a schedule,
-after a daily limit, or during a focus session you start. It has no account, no server
-and no analytics. It will never tell you a block is impossible to bypass, because on iOS
-that would not be true.</p>
+<section id="features">
+  <div class="wrap">
+    <div class="feat">
+      <div>
+        <span class="kicker">차단 화면</span>
+        <h2>막아 두되,<br>가두지 않아요</h2>
+        <p class="body">고른 앱을 열면 차단 화면이 먼저 떠요. 그대로 앱을 닫거나, &#39;꼭 필요해요&#39;를 눌러 잠깐 생각할 시간을 가질 수 있어요.</p>
+<ul><li>앱·카테고리·사이트를 골라 차단</li><li>차단 화면은 미리 보기로 확인 가능</li></ul>      </div>
+      <div class="shot"><div class="phone"><img src="assets/img/shield-ko.webp" alt="&#39;지금은 아니에요&#39; 차단 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
+    </div>
+    <div class="feat rev">
+      <div class="shot"><div class="phone"><img src="assets/img/pause-ko.webp" alt="열려는 이유를 고르는 멈춤 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
+      <div>
+        <span class="kicker">잠깐 멈춤</span>
+        <h2>열기 전에<br>숨 한 번</h2>
+        <p class="body">차단 화면에서 &#39;꼭 필요해요&#39;를 누르면 알림을 통해 Halto의 멈춤 화면이 열려요. 15초 동안 숨을 고르고 무엇 때문에 필요한지 고른 뒤 5분만 열어요. 마음이 바뀌면 &#39;그만둘게요&#39;를 누르면 돼요.</p>
+<ul><li>15초·5분·하루 3번은 기본값, 설정에서 바꿀 수 있어요</li><li>해제 시간이 끝나면 다시 차단</li></ul>      </div>
+    </div>
+    <div class="feat">
+      <div>
+        <span class="kicker">일정</span>
+        <h2>내 시간표대로</h2>
+        <p class="body">업무 시간, 잠들기 전, 평일만. 프로필마다 막을 앱과 시간을 묶어 두면 그 시간에 Halto가 차단해요. 자정을 넘겨 다음 날 아침까지 이어지는 일정도 만들 수 있어요.</p>
+<ul><li>일정·하루 한도(Pro)·집중 중에서 선택</li><li>엄격 모드로 해제를 더 어렵게(Pro)</li></ul>      </div>
+      <div class="shot"><div class="phone"><img src="assets/img/schedule-ko.webp" alt="프로필 일정 설정 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
+    </div>
+    <div class="feat rev">
+      <div class="shot"><div class="phone"><img src="assets/img/insights-ko.webp" alt="그냥 닫은 횟수와 해제 횟수를 보여 주는 인사이트 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
+      <div>
+        <span class="kicker">인사이트</span>
+        <h2>그냥 닫은 순간을<br>세어요</h2>
+        <p class="body">대부분의 앱은 잃어버린 시간을 세요. Halto는 잠금을 풀지 않고 그냥 닫은 횟수를 세요. 습관이 실제로 바뀌는 순간이니까요.</p>
+<ul><li>열려고 한 이유와 해제 횟수를 한눈에</li><li>월요일 아침 주간 요약 알림, 원할 때만</li></ul>      </div>
+    </div>
+  </div>
+</section>
 
-<footer>SUPPORT_EMAIL_TBD</footer>
+<section class="soft">
+  <div class="wrap center">
+    <span class="kicker">사용 방법</span>
+    <h2>세 단계면 시작해요</h2>
+    <div class="steps">
+<div class="step"><div class="n">1</div><h3>차단 권한 허용</h3><p>앱을 막으려면 iOS의 권한이 필요해요. 애플은 앱 이름 대신 익명 식별값만 전달해요.</p></div><div class="step"><div class="n">2</div><h3>앱과 시간 고르기</h3><p>막을 앱·카테고리·사이트와 시간을 골라 프로필을 만들어요.</p></div><div class="step"><div class="n">3</div><h3>닫고, 넘어가기</h3><p>차단 화면에서 앱을 닫을 때마다 인사이트에 기록돼요.</p></div>    </div>
+  </div>
+</section>
+
+<section id="privacy" class="dark">
+  <div class="wrap priv">
+    <div>
+      <span class="kicker">개인정보</span>
+      <h2>아무것도 폰 밖으로<br>나가지 않아요</h2>
+      <p class="lead">Halto에는 계정도, 서버도, 분석 도구도, 외부 SDK도 없어요. 일정과 이유, 기록은 모두 이 iPhone 안에만 있어요.</p>
+      <div class="pgrid">
+<div class="pcard"><b>익명 식별값만</b><p>애플은 고른 앱의 이름 대신 익명 식별값만 전달해요. 어떤 앱을 골랐는지 저희도 볼 수 없어요.</p></div><div class="pcard"><b>사용 시간은 애플 영역 안에</b><p>사용 시간 그래프는 애플이 보호된 영역 안에서 직접 그려요. 앱은 그 숫자를 받지 않아요.</p></div><div class="pcard"><b>수집하는 데이터 없음</b><p>App Store 개인정보 라벨: 데이터 수집 안 함.</p></div><div class="pcard"><b>언제든 모두 삭제</b><p>설정 › 모든 데이터 초기화, 또는 앱을 지우면 모두 사라져요.</p></div>      </div>
+    </div>
+    <div class="shot"><div class="phone"><img src="assets/img/privacy-ko.webp" alt="기록이 저장되는 곳을 안내하는 개인정보 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap center">
+    <span class="kicker">요금</span>
+    <h2>무료로 시작하고,<br>필요할 때만 Pro</h2>
+<p class="lead">프로필 하나와 하루 집중 세션 3번은 기간 제한 없이 무료예요. 더 필요할 때 Pro를 고르세요.</p>    <div class="plans">
+      <div class="plan">
+        <h3>무료</h3>
+        <div class="price">₩0</div>
+        <div class="per">기간 제한 없음</div>
+        <ul><li>프로필 1개 (일정 또는 집중)</li><li>하루 집중 세션 3번</li><li>오늘의 리포트와 주간 요약</li><li>실시간 활동과 위젯</li></ul>
+      </div>
+      <div class="plan hl">
+<span class="tag">추천</span>        <h3>Halto Pro 연간</h3>
+        <div class="price">₩39,000<span class="per"> / 년</span></div>
+        <div class="per">체험 대상자는 2주 무료 체험 후 연 ₩39,000 · 체험 종료 24시간 전 알림 선택 가능</div>
+        <ul><li>프로필 무제한·하루 한도·엄격 모드</li><li>오늘 이전의 인사이트 기록</li><li>언제든 해지</li></ul>
+      </div>
+      <div class="plan">
+        <h3>Halto Pro 평생</h3>
+        <div class="price">₩79,000</div>
+        <div class="per">한 번 결제 · 구독 아님</div>
+        <ul><li>Pro 기능 평생 이용</li><li>갱신 결제 없음</li></ul>
+      </div>
+    </div>
+    <p class="fine">구독은 기간이 끝나기 24시간 전까지 해지하지 않으면 자동으로 갱신되고, 결제는 Apple 계정으로 청구돼요. 해지는 설정 › Apple 계정 › 구독에서 할 수 있어요. 앱 안에서 주간 요금제(₩5,500, 매주 갱신)도 선택할 수 있어요. 가격은 국가별로 다를 수 있어요.</p>
+  </div>
+</section>
+
+<section class="soft" id="faq">
+  <div class="wrap">
+    <div class="center"><span class="kicker">자주 묻는 질문</span><h2>궁금한 점</h2></div>
+    <div class="faq">
+<details><summary>정말 못 끄나요?</summary><p>끌 수 있어요. iOS에서는 언제든 설정에서 Halto의 차단 권한을 끄거나 앱을 지울 수 있고, Halto는 이 사실을 숨기지 않아요. 대신 엄격 모드(Pro)를 켜면 일반 해제가 꺼지고 하루 한 번 비상 해제만 남아요. 엄격 모드가 차단 중일 때는 그 프로필을 수정하거나 끄거나 삭제할 수 없고, 비상 해제를 쓰고 나면 일정이 끝날 때까지 차단이 유지돼요.</p></details>
+<details><summary>꼭 필요할 땐 어떻게 여나요?</summary><p>차단 화면에서 &#39;꼭 필요해요&#39;를 누르면 알림이 와요. 알림을 누르면 Halto의 멈춤 화면이 열리고, 15초 동안 숨을 고른 뒤 이유를 고르면 5분 동안 열 수 있어요. 해제는 기본 하루 3번이고, 멈춤 시간·해제 시간·횟수는 설정 › 해제 기본값에서 바꿀 수 있어요.</p></details>
+<details><summary>제가 어떤 앱을 쓰는지 Halto가 알 수 있나요?</summary><p>아니요. 애플은 고른 앱의 이름 대신 익명 식별값만 전달하고, 사용 시간 수치는 애플의 보호된 영역 안에서만 그려져요. Halto에는 계정도 서버도 없어서 어떤 기록도 밖으로 보내지 않아요.</p></details>
+<details><summary>무료로 어디까지 쓸 수 있나요?</summary><p>프로필 1개(일정 또는 집중), 하루 집중 세션 3번, 오늘의 리포트와 해제 이유, 주간 요약 알림, 실시간 활동과 위젯은 무료예요. 프로필 무제한, 하루 한도, 엄격 모드, 오늘 이전의 인사이트 기록은 Pro에서 쓸 수 있어요.</p></details>
+<details><summary>정해진 시각에 딱 맞춰 막히고 풀리나요?</summary><p>초 단위로 정확하지는 않아요. iOS는 기기를 사용할 때 Halto를 깨우기 때문에 차단이나 해제가 조금 늦을 수 있어요. 해제 시간이 끝나면 다시 막히지만, iPhone이 잠들어 있으면 조금 더 걸릴 수 있어요.</p></details>
+<details><summary>구독은 어떻게 해지하나요?</summary><p>설정 › Apple 계정 › 구독, 또는 앱 안의 &#39;구독 관리&#39;에서 언제든 해지할 수 있어요. 체험이나 구독 기간이 끝나기 24시간 전까지 해지하면 결제되지 않아요. 원하면 체험이 끝나기 24시간 전에 알림을 한 번 받을 수 있어요.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="final">
+  <div class="wrap">
+    <img src="assets/img/icon.webp" alt="Halto" width="96" height="96" loading="lazy">
+    <h2>내 시간을 되찾으세요</h2>
+    <p class="lead">곧 App Store에서 만나요.</p>
+    <div class="cta"><span class="store soon" role="note"><span><small>곧 출시</small>App Store</span></span>
+</div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Andy Jae · Halto</span>
+    <nav aria-label="지원"><a href="support.html">지원</a><a href="privacy.html">개인정보처리방침</a><a href="terms.html">이용약관</a></nav>
+  </div>
+</footer>
 </body>
 </html>
